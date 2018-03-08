@@ -87,5 +87,4 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 
 define('EXPEDIA_REST_API_SERVER', 'https://offersvc.expedia.com/offers/v2/');
 define('EXPEDIA_REST_API_DEFAULT_SEARCH_METHOD', 'getOffers');
-define('EXPEDIA_REST_API_DEFAULT_SEARCH_PARAMS', '{"scenario":"deal-finder","page":"foo","uid":"foo","productType":"Hotel"}
-');
+define('EXPEDIA_REST_API_DEFAULT_SEARCH_PARAMS', '{"scenario":"deal-finder","page":"foo","uid":"foo","productType":"Hotel"}');
