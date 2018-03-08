@@ -29,7 +29,7 @@ cd /Library/WebServer/Documents
 Clone the repo from git
 
 ```
-git clone git@github.com:wesam/expedia-technical-assignment.git
+git clone git@github.com:wesam/expedia-assignment.git
 ```
 
 Now please open the web server domain to check the project for example http://localhost
