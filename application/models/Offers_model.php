@@ -19,8 +19,6 @@
                 }
             }
             
-            //print_r($params); die;
-            
             return $params;
             
         }
