@@ -1,8 +1,8 @@
-# Expedia: Find Hotel Deals
+# <a href="https://www.expedia.com/" target="_blank">Expedia</a>: Find Hotel Deals
 
 this project for technical assignment only.
 
-In this project we integrate with expedia api to search for hotel offers deals and disnplay them in a good layout.
+In this project we integrate with expedia rest API to search for hotel offers deals and disnplay them in a good layout.
 
 Demo <a href="https://calm-sea-37924.herokuapp.com/">https://calm-sea-37924.herokuapp.com/</a>
 
