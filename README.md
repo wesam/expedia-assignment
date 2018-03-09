@@ -4,6 +4,8 @@ this project for technical assignment only.
 
 In this project we integrate with expedia api to search for hotel offers deals and disnplay them in a good layout.
 
+Demo <a href="https://calm-sea-37924.herokuapp.com/">https://calm-sea-37924.herokuapp.com/</a>
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
