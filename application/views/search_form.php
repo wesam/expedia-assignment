@@ -14,8 +14,6 @@
         
         <p class="card-text">Plan your next trip with Expedia. Read reviews on thousands of hotels, and bundle for even more savings. Expedia Price Guarantee!</p>
         
-        
-        
     </div>
     
     <div class="card-body">
@@ -81,7 +79,7 @@
                     </div>
                     <div class="col">
                         <label class="label-control"><b>Max Hotel Rating:</b></label>
-                        <select class="form-control" name="minStarRating">
+                        <select class="form-control" name="maxStarRating">
                             <option value="">-----</option>
                             <option value="1">1 Star</option>
                             <option value="2">2 Stars</option>
@@ -103,7 +101,7 @@
                     </div>
                     <div class="col">
                         <label class="label-control"><b>Max Guest Rating:</b></label>
-                        <select class="form-control" name="minGuestRating">
+                        <select class="form-control" name="maxGuestRating">
                             <option value="">-----</option>
                             <option value="1">1 Star</option>
                             <option value="2">2 Stars</option>
@@ -118,7 +116,7 @@
             
             <a class="btn btn-success" href="/" style="float: right; margin-top: 25px;"><i class="fa fa-file"></i> Reset</a>
             
-            <a class="btn btn-info" data-toggle="collapse" href="#search_form" aria-expanded="true" aria-controls="search_form" style="float: right; margin-top: 25px;"><i class="fa fa-filter"></i> Filtration</a>
+            <a class="btn btn-info" data-toggle="collapse" href="#search_form" aria-expanded="true" aria-controls="search_form" style="float: right; margin-top: 25px;"><i class="fa fa-filter"></i> Advanced</a>
             
             <button type="submit" class="btn btn-warning" style="float: right; margin-top: 25px;"><i class="fa fa-search"></i> Search</button>
                             

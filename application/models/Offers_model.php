@@ -11,15 +11,31 @@
         
         private function manipulate_search_params($params) {
             
-            $params = (array) $params + (array) json_decode(EXPEDIA_REST_API_DEFAULT_SEARCH_PARAMS, true);
-            
-            foreach($params as $paramKey => &$paramValue) {
+            foreach($params as $paramKey => $paramValue) {
+                
+                $paramValue = trim($paramValue);
+                
                 if(empty($paramValue)) {
                     unset($params[$paramKey]);
                 }
+                else {
+                    if(in_array($paramKey, array('destinationName', 'minTripStartDate', 'maxTripStartDate', 'lengthOfStay', 'destinationCity', 'destinationProvince', 'regionIds', 'minStarRating', 'maxStarRating', 'minGuestRating', 'maxGuestRating'))) {
+                        
+                        if($paramKey == 'minStarRating' && $params['minStarRating'] != 5 && intval($params['maxStarRating']) == 0) {
+                            $params['maxStarRating'] = intval($params['maxStarRating']) + 0.5;
+                        }
+                        else if($paramKey == 'minGuestRating' && $params['minGuestRating'] != 5 && intval($params['maxGuestRating']) == 0) {
+                            $params['maxGuestRating'] = intval($params['minGuestRating']) + 0.99;
+                        }
+                        
+                    }
+                    else {
+                        unset($params[$paramKey]);
+                    }
+                }
             }
-            
-            return $params;
+                                    
+            return (array) $params + (array) json_decode(EXPEDIA_REST_API_DEFAULT_SEARCH_PARAMS, true);
             
         }
         
